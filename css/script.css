@@ -1,6 +1,11 @@
+@font-face {
+    font-family: 'Do4BrainBold-2ODJo';
+    src: url("../fonts/Do4BrainBold-2ODJo.ttf") format("truetype");
+}
 body {
     background-color: #0D203C;
     color: white;
+    font-family: 'Do4BrainBold-2ODJo', sans-serif;
 }
 
 input[type="text"],
@@ -10,4 +15,5 @@ input[type="password"] {
     flex-shrink: 0;
     border-radius: 20px;
     background: #D9D9D9;
+    font-family: 'Do4BrainBold-2ODJo', sans-serif;
 }
