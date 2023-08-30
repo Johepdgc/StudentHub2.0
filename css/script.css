@@ -7,7 +7,7 @@
     src: url("../fonts/Do4BrainLight-vmXD9.ttf") format("truetype");
 }
 * {
-    background-color: #203046;
+    background-color: #0D203C;
     /* background: linear-gradient(to right, #203046 0%, #203046 50%, #0D203C 50%, #0D203C 100%); */
     color: white;
     font-family: 'Do4BrainBold-2ODJo', sans-serif;
@@ -17,7 +17,7 @@
 
 }
 .login {
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom: 40px;
     text-align: center;
 }
@@ -25,10 +25,64 @@
     padding: 40px;
     padding-bottom: 40px;
 }
+.inicio {
+    padding: 40px;
+    padding-bottom: 40px;
+}
 
 .btn-padding {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.hub-nav {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .inicio {
+    margin-left: 200px; /* Same as the width of the sidenav */
+  }
+  
+  @inicio screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+.inicio {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+.logo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 50%;
+    height: 80%;
 }
 
 input[type="text"],
