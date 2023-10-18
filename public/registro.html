@@ -6,9 +6,11 @@
     <title>Entra al Hub</title>
 
     <link rel="stylesheet" href="css/script.css">
+    <script src="js/script.js"></script>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
 </head>
 <body>
   <!-- Navbar -->
@@ -19,73 +21,20 @@
     </nav>
     <section class="signin" id="page2">
         <div class="container">
-            <form class="row g-3 needs-validation" novalidate>
-                <div class="col-md-4">
-                  <label for="validationCustom01" class="form-label">Nombre</label>
-                  <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-                  <div class="valid-feedback">
-                    Looks good!
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <label for="validationCustom02" class="form-label">Apellido</label>
-                  <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-                  <div class="valid-feedback">
-                    Looks good!
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <label for="validationCustomUsername" class="form-label">Usuario</label>
-                  <div class="input-group has-validation">
-                    <span class="input-group-text" id="inputGroupPrepend">@</span>
-                    <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-                    <div class="invalid-feedback">
-                      Please choose a username.
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                    <label for="validationCustomUsername" class="form-label">Contraseña</label>
-                    <div class="input-group has-validation">
-                      <input type="password" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-                      <div class="invalid-feedback">
-                        Ingresa una contraseña
-                      </div>
-                    </div>
-                  </div>
-                <div class="col-md-6">
-                  <label for="validationCustom03" class="form-label">Universidad</label>
-                  <input type="text" class="form-control" id="validationCustom03" required>
-                  <div class="invalid-feedback">
-                    Ingresa tu universidad
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <label for="validationCustom04" class="form-label">Facultad</label>
-                  <select class="form-select" id="validationCustom04" required>
-                    <option selected disabled value="">Choose...</option>
-                    <option>Ciencia y Tecnoclogía</option>
-                    <option>Derecho</option>
-                    <option>Ingeniería</option>
-                    <option>Medicina</option>
-                  </select>
-                  
-                </div>
-                <div class="col-12">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                    <label class="form-check-label" for="invalidCheck">
-                      Agree to terms and conditions
-                    </label>
-                    <div class="invalid-feedback">
-                      You must agree before submitting.
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <button class="btn btn-warning btn-lg btn-padding" type="submit">Registrarse</button>
-                </div>
-              </form>
+          <form class="row g-3 needs-validation" novalidate action="/register" method="post" id="registro-form">
+            <div class="form-group">
+                <label for="username">Nombre de Usuario:</label>
+                <input type="text" autocomplete="off" id="username" placeholder="Username"/>
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" autocomplete="off" id="password" placeholder="Password" required/>
+            </div>
+            
+            <button type="submit">Registrarse</button>
+          </form>
+    
+        <p id="mensaje-registro"></p>
         </div>
     </section>
 </body>
