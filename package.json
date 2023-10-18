@@ -1,11 +1,12 @@
 {
   "name": "studenthub",
   "version": "1.0.0",
-  "description": "server",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "jest"
   },
+  "keywords": [],
   "author": "johep",
   "license": "ISC",
   "dependencies": {
@@ -15,5 +16,8 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^7.6.3",
     "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }
